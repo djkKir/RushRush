@@ -16,14 +16,27 @@ public class Solution
 
     public static ArrayList<String>[] createList()
     {
-        ArrayList<String>[] list = new  ArrayList<String>[];
-        for (int i = 0; i< 10; i++)
+ArrayList<String> g1 = new ArrayList<String>();
+ArrayList<String> g2 = new ArrayList<String>();
+ArrayList<String> g3 = new ArrayList<String>();
+        for (int j = 0; j < 3; j++)
         {
-            list[i] = new ArrayList<String>();
+            g1.add("silent");
+            g2.add("eat");
+            g3.add("brein");
         }
+        ArrayList<String>[] gg = new ArrayList[3];
+
+
+
+          gg[0] = g1;
+          gg[1] = g2;
+          gg[2] = g3;
+
+
         //напишите тут ваш код
 
-        return list;
+        return gg;
     }
 
     public static void printList(ArrayList<String>[] arrayOfStringList)
