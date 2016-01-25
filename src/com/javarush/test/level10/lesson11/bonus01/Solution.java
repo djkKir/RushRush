@@ -12,12 +12,12 @@ import java.util.Map;
 
 public class Solution {
     HashMap<Integer, String> map;
-    Integer index;
+    int index;
     String name;
 
     public Solution() {
         this.map = new HashMap<Integer, String>();
-        map.put(index, name);
+       // map.put(index, name);
     }
 
     public static void main(String[] args) throws IOException {
@@ -31,8 +31,9 @@ public class Solution {
         }
 
         for (Map.Entry<Integer, String> pair : solution.map.entrySet()) {
-
-            System.out.println("Id=" + pair.getKey() + " Name=" +  pair.getValue());
+            int index = pair.getKey();
+            String name = pair.getValue();
+            System.out.println("Id=" + index + " Name=" + name);
         }
     }
 }
